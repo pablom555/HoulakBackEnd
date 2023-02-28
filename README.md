@@ -27,7 +27,7 @@ yarn run start
 ### api/v1/spotify/login
 log into spotify. You need to run this endpoint before you can use the api. You can put this url in your browser.
 
-### api/v1/spotify/Guns
+### api/v1/spotify/albums?artistName=Guns
 returns Guns And Roses's albums ordered by popularity
 
 ```json

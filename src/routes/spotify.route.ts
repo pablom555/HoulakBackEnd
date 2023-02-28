@@ -64,9 +64,9 @@ spotifyRoutes.get('/callback', (req: Request, res: Response) => {
 });
 
 // Get albums by artist name
-spotifyRoutes.get('/:artist', async (req: Request, res: Response) => {
+spotifyRoutes.get('/albums', async (req: Request, res: Response) => {
   try {
-    const { artist: artistName } = req.params;
+    const artistName = req?.query?.artistName as string;
 
     saveRequest(req.clientIp || '127.0.0.1', artistName);
 
